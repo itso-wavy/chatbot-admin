@@ -1,0 +1,103 @@
+{
+  "accounts": [
+    {
+      "id": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+      "email": "happy.campus@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "counselors": [
+    {
+      "id": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+      "profile": {
+        "name": "김튜링",
+        "gender": "여",
+        "center": "가정행복센터",
+        "region": "대전",
+        "email": "happy.campus@gmail.com",
+        "call": "042-223-7778",
+        "경력": [
+          {
+            "label": "000 센터",
+            "date": "2024.01 - 2024.06"
+          }
+        ],
+        "학력": [
+          {
+            "label": "000 심리학 석사",
+            "date": "2024.01 - 2024.06"
+          }
+        ],
+        "자격증": [
+          {
+            "label": "000 자격",
+            "date": "2024.03"
+          }
+        ]
+      },
+      "settings": {
+        "profileImage": "https://example.com/profile/image.jpg",
+        "specialties": ["불안", "PTSD"],
+        "availableHours": {
+          "월": "09:00-18:00",
+          "화": "09:00-18:00",
+          "수": "09:00-18:00",
+          "목": "09:00-18:00",
+          "금": "09:00-18:00",
+          "토": "09:00-13:00",
+          "일": "휴무"
+        },
+        "isAvailable": true,
+        "pushNotification": {
+          "enabled": true,
+          "excludeHours": {
+            "start": "22:00",
+            "end": "09:00"
+          }
+        }
+      }
+    }
+  ],
+  "chatRequests": [
+    {
+      "id": "chat-123",
+      "clientId": "client-456",
+      "counselorId": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+      "requestedAt": "2024-03-19T10:00:00Z",
+      "status": "NEW",
+      "chatbotHistory": [
+        {
+          "timestamp": "2024-03-19T09:55:00Z",
+          "message": "안녕하세요..."
+        }
+      ],
+      "notes": [
+        {
+          "id": "note-789",
+          "content": "초기 상담 메모",
+          "createdAt": "2024-03-19T10:05:00Z",
+          "updatedAt": "2024-03-19T10:05:00Z"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-123",
+      "counselorId": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+      "type": "NEW_REQUEST",
+      "chatRequestId": "chat-123",
+      "createdAt": "2024-03-19T10:00:00Z",
+      "read": false
+    }
+  ],
+  "statistics": [
+    {
+      "counselorId": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+      "date": "2024-03-19",
+      "requestCount": 5,
+      "completedCount": 3,
+      "type": "DAILY"
+    }
+  ]
+}
