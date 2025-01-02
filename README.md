@@ -35,19 +35,7 @@ App
 #### - folder
 
 - Container(`UI`)/Presenter(`Logic`) 디자인 패턴을 따름
-- 비즈니스 로직은 주로 Hook으로 처리
-
-```
-src/
-├── stores/              # 전역 상태 관리
-│   ├── useAuthStore.ts  # 인증 관련 store
-│   └── useThemeStore.ts # 테마 관련 store
-│
-└── hooks/               # 비즈니스 로직, UI 로직
-    ├── useAlarms.ts    # 알람 관련 로직 (TanStack Query)
-    ├── useForm.ts      # 폼 관련 커스텀 로직
-    └── useModal.ts     # 모달 관련 UI 로직
-```
+- 비즈니스 로직은 Hook으로 처리
 
 ```
 src/
