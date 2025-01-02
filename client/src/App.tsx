@@ -1,7 +1,18 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
 import Router from './routes';
 
+/**
+ * Application = ContextProvider ▶ Router 구조
+ */
 function App() {
-  return <Router />;
+  const queryClient = new QueryClient();
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Router />
+    </QueryClientProvider>
+  );
 }
 
 export default App;

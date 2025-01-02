@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
 
-import { RootLayout, ProtectedLayout } from '@/components/layouts';
-import { Dashboard, Login, Analytics } from '@/pages';
+import { RootLayout, ProtectedLayout } from '@/layouts';
+import { Dashboard, Analytics } from '@/pages';
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
+
+        {/* Public routes */}
         <Route element={<RootLayout />}>
-          <Route path='login' element={<Login />} />
+
+          {/* Protected routes */}
           <Route element={<ProtectedLayout />}>
             <Route index element={<Dashboard />} />
             <Route path='analytics' element={<Analytics />} />
@@ -20,3 +23,4 @@ const Router = () => {
 };
 
 export default Router;
+

@@ -71,29 +71,10 @@ const config: Config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        alpha: 'hsla(var(--color-alpha))',
-        beta: 'hsla(var(--color-beta))',
-        gamma: 'hsla(var(--color-gamma))',
       },
     },
   },
-  safelist: [
-    {
-      pattern: /bg-(alpha|beta|gamma)/,
-      variants: ['hover', 'dark'],
-    },
-    {
-      pattern: /text-(alpha|beta|gamma)/,
-      variants: ['hover', 'dark'],
-    },
-    {
-      pattern: /ring-(alpha|beta|gamma)/,
-      variants: ['hover', 'dark'],
-    },
-    {
-      pattern: /from-(alpha|beta|gamma)/,
-    },
-  ],
+  safelist: [ ],
   plugins: [require('tailwindcss-animate')],
 };
 
